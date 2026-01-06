@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>PhoneAFriend</title>
+
+    <link rel="manifest" href="manifest.json" />
+    <meta name="theme-color" content="#0b0b0c" />
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header class="header">
+        <div>
+            <h1>PhoneAFriend</h1>
+            <p class="sub">Tap <b>Called</b> to reset the counter.</p>
+        </div>
+        <button id="addBtn" class="btn primary">+ Add</button>
+    </header>
+
+    <main class="container">
+        <section class="toolbar">
+            <input id="searchInput" class="search" placeholder="Search..." autocomplete="off" />
+            <div class="tools">
+                <button id="exportBtn" class="btn">Export</button>
+                <label class="btn FileBtn">
+                    Import
+                    <input id="importInput" type="file" accept="application/json" hidden />
+                </label>
+            </div>
+        </section>
+
+        <ul id="list" class="list"></ul>
+
+        <div id="emptyState" class="empty hidden">
+            <p>No tracked people yet.</p>
+            <p>Hit <b>+ Add</b> to start.</p>
+        </div>
+    </main>
+
+    <dialog id="modal" class="modal">
+        <form id="form" method="dialog" class="modalCard">
+            <h2 id="modalTitle">Add person</h2>
+        
+            <label class="field">
+                <span>Name</span>
+                <input id="nameInput" required maxlength="60" placeholder="John Doe" />
+            </label>
+
+            <label class="field">
+                <span>Last Called</span>
+                <input id="dateInput" type="date" />
+            </label>
+
+            <div class="row">
+                <button id="cancelBtn" class="btn" type="button">Cancel</button>
+                <button id="saveBtn" class="btn" type="submit">Save</button>
+            </div>
+
+            <input id="idInput" type="hidden"/>
+        </form>
+    </dialog>
+
+    <script type="module" src="app.js"></script>
+</body>
+
+</html>

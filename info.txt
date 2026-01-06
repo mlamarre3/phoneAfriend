@@ -1,0 +1,31 @@
+Basic Vision:
+
+The app contains a basic list that looks almost exactly like a contact list. Each contact contains a name, 
+# of days since last call, and a button that says "Called". The button, when pressed, records the date and 
+starts a new count of days since last called. The list is organized by days since last called (most recent at the bottom).
+
+Due to Apple restrictions on call tracking the data will have to be manually recorded and stored within the app. Also, because I am
+on Windows, the app will have to be created as a PWA. This means it will be a website that is "downloaded" to my phone.
+
+Parts:
+
+VS Code
+Web Browser
+GitHub (for launch)
+
+UI (html)
+App (js)
+Storage (js)
+Offline Support (js)
+App Identity (json)
+Appearance (css)
+
+Steps:
+
+Create folder
+Write scripts
+Open html in Chrome to test
+Upload to GitHub
+Get URL
+Follow URL on iPhone
+Download to iPhone
