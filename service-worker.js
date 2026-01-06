@@ -1,4 +1,4 @@
-const CACHE_NAME = "phoneafriend-v1";
+const CACHE_NAME = "phoneafriend-v1.1";
 const ASSETS = [
     "./",
     "./index.html",
@@ -35,4 +35,5 @@ self.addEventListener("fetch", (Event) => {
     Event.respondWith(
         caches.match(req).then(cached => cached || fetch(req))
     );
+
 });
