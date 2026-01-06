@@ -28,8 +28,8 @@ function daysSince(dateISO) {
 }
 
 function statusForDays(d) {
-  if (d >= 90) return { label: "Been awhile", dot: "var(--danger)" };
-  if (d >= 21) return { label: "Check In", dot: "var(--warn)" };
+  if (d >= 178) return { label: "Been awhile", dot: "var(--danger)" };
+  if (d >= 31) return { label: "Check In", dot: "var(--warn)" };
   return { label: "Connected", dot: "var(--ok)" };
 }
 
@@ -265,3 +265,4 @@ async function init() {
 
 
 init();
+
